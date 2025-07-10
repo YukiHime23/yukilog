@@ -1,4 +1,4 @@
-module yukilog
+module github.com/YukiHime23/yukilog
 
 go 1.23.4
 
