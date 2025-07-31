@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/YukiHime23/yukilog/cusslog"
+	"github.com/YukiHime23/yukilog"
 	"github.com/joho/godotenv"
 )
 
@@ -14,11 +14,9 @@ func init() {
 }
 
 func main() {
+	yukilog.InitCussLog()
 
-	cusslog.InitCussLog()
-
-	cusslog.Info("Hello World")
-	cusslog.Debug("Hello World")
-	cusslog.Error("Hello World")
-
+	yukilog.Info("Hello World")
+	yukilog.Debug("Hello World")
+	yukilog.Error("Hello World")
 }

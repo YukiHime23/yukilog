@@ -1,4 +1,4 @@
-package cusslog
+package yukilog
 
 import (
 	"context"
