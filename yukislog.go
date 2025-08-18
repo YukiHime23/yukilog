@@ -3,6 +3,7 @@ package yukilog
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"io"
 	"log"
 	"log/slog"
@@ -151,4 +152,8 @@ func Error(msg string, args ...any) {
 
 func Warn(msg string, args ...any) {
 	slog.Warn(msg, args...)
+}
+
+func WarpError(msg string, args ...any) error {
+	return fmt.Errorf(msg+"(%s)", args...)
 }
